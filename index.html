@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;  
+        }
+        td,th
+        {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./logo.svg" alt="logo epicode" width="100px" />
+      <h1>Epicode - il blog dei developers</h1>
+      <a href="#header"><button>Home</button> </a>
+      <a href="https://epicode.com/it/community/"><button>Articoli</button></a>
+      <a href="https://epicode.com/it/candidati/"><button>Lavora con noi</button></a>
+      
+    </header>
+
+    <main>
+      <h2>Come creare un template per i post</h2>
+      <h4>di Mario Rossi - pubbluciato il 25-10-2020</h4>
+      <p>La prima cosa da fare è suddividere in blocchi la pagina, identificando le parti comuni da appliacre a tutte le pagine</p>
+      <div>
+        <h4>Le varie aree saranno quindi suddivise in:</h4>
+        <ul>
+            <li>Contenuti di intestazione del tag &lt;header &gt;</li>
+            <li>Contenuti centrali variabili del tag &lt;main &gt; </li>
+            <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer &gt;</li>
+        </ul>
+      </div>
+      <h3>Formattazione del codice</h3>
+        <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
+        <div>
+            <ol>
+                <li>Progettare il markuo assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                <li>Applicare gli stili CSS</li>
+            </ol>
+        </div>
+       <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffuzione pressochè totale.</p>
+      <table>
+        <thead>
+            <tr>
+            <th>Anno</th>
+            <th>% di utilizzo</th>
+            <th>Supporto browsers</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2000</td>
+                <td>20%</td>
+                <td>17%</td>
+                <tr>
+                    <td>
+                        2002
+                    </td>
+                    <td>
+                        35%
+                    </td>
+                    <td>22%</td>
+                </tr>
+                <tr>
+                    <td>
+                        2004
+                    </td>
+                    <td>
+                        45%
+                    </td>
+                    <td>42%</td>
+                </tr>                
+                <tr></tr>
+                    <td>
+                        2008
+                    </td>
+                    <td>
+                        80%
+                    </td>
+                    <td>51%</td>
+                </tr>
+                <tr></tr>
+                    <td>
+                        2012
+                    </td>
+                    <td>
+                        100%
+                    </td>
+                    <td>76%</td>
+                </tr>
+            </tr>
+        </tbody>
+      </table>
+      <p>Un test di validazione potrà essere fatto tramite il tool online <a href="https://tool-online.com/en/">-LINK ESTERNO-</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo ragiunto il nostro obiettivo ed essere dei veri developers come loro:</p>
+
+      <p>Vuoi rimanere aggiornato su altre novità blog? Iscriviti alla nostra newsletter:</p>
+      <form>
+      <div>
+        <label for="nome">Inserisci il tuo nome</label>
+        <input type="text"
+        id="nome"
+        placeholder="Nome e cognome">
+      </div>
+      <div>
+        <label for="numero">Ineserisci il tuo numero di telefono</label>
+        <input type="tel" id="numero"
+        placeholder="1234567890">
+      </div>
+      <div>
+        <label for="EMAIL">inserisci la tua email</label>
+        <input type="text" id="EMAIL"
+        placeholder="nome@cognome.com">
+      </div>
+      <div>
+      <label for="scelta">Vuoi essere aggionrato ogni giorno?</label>
+      <select id="scelta">
+        <option>Si</option>
+        <option>No</option>
+   </div>
+</form> 
+</main>
+   <footer>
+      <p>Blog Epicode &copy;2023</p>
+      <p>
+        Testata online di Mario Rossi, registrata con prot. n.213/2018 - Via
+        Luigi Einaudi 2 - Milano P.IVA 00112233.
+      </p>
+      <p>
+        info@epicode.school
+        <a href="https://www.google.com/intl/it/gmail/about/">-LINK EMAIL-</a>
+      </p>
+    </footer>
+  </body>
+</html>
